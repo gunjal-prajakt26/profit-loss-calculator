@@ -15,7 +15,11 @@ function clickHandler() {
         const sq = Number(stocksQt.value);
         const cp = Number(currentPrice.value);
 
-        calculate(ip, sq, cp);
+        if(ip > 0 && sq > 0 && cp > 0){
+            calculate(ip, sq, cp);
+        }else{
+            displayResult("Please enter all fields & Valid Values", "red");
+        }
     }
 }
 
