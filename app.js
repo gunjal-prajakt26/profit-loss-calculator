@@ -18,7 +18,7 @@ function clickHandler() {
         if(ip > 0 && sq > 0 && cp > 0){
             calculate(ip, sq, cp);
         }else{
-            displayResult("Please enter all fields & Valid Values", "red");
+            displayResult("Please enter all valid values", "red");
         }
     }
 }
